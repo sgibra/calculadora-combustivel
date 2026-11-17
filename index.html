@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustível</title>
+
+    <!-- Ligação entre HTML e CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="principal">
+
+        <div class="imagem-principal">
+            <img src="foto.jpeg" width="400" alt="Foto de um carro no posto de gasolina">
+        </div>
+
+        <div class="conteudo">
+            <h1>Qual combustível é melhor?</h1>
+            <p>Preencha os campos e veja qual é o mais vantajoso.</p>
+
+            <form onsubmit="verificarCombustivel(event)">
+
+                <label for="gasolina">Valor do litro da Gasolina</label><br>
+                <input type="number" title="Utilize ponto para separar os números" step="0.01" id="gasolina" required placeholder="Ex: 6.50"><br>
+
+                <label for="etanol">Valor do litro do Etanol</label><br>
+                <input type="number" title="Utilize ponto para separar os números" step="0.01" id="etanol" required placeholder="Ex: 4.90"><br>
+
+                <div class="button">
+                    <button type="submit">Calcular</button>
+                </div>
+            
+            </form>
+
+            <!-- <h2> Abasteça com Gasolina </h2> -->
+             <div id="resposta"></div>
+
+        </div>
+
+        <div class="rodape">
+            <p>Desenvolvido por Sophia</p>
+        </div>
+
+    </div>
+
+    <!-- Ligação entre o HTML e JS -->
+     <script src="script.js"></script>
+
+</body>
+</html>
